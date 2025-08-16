@@ -1,0 +1,8 @@
+npx sv create numstats
+no tailwind support
+cd
+
+npm install
+
+npx svelte-add@latest tailwindcss
+
