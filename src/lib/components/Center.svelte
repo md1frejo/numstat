@@ -1,48 +1,16 @@
 <script>
+ import Left from "$lib/components/Left.svelte"
+ import Datadisp from "$lib/components/Datadisp.svelte"
 
- export let stats;
- 
- let openItems = {};
- 
-  function toggleValue(country,key) {
-    if (!openItems[country]) {
-      openItems[country] = new Set();
-    }
-    if (openItems[country].has(key)) {
-      openItems[country].delete(key); // close it
-    }
-    else {
-      openItems[country].add(key); // open it
-    }
-    openItems = { ...openItems };
-  }
+ export let stats
  
 </script>
 
-<style>
-</style>
-
-<main class="container max-w-cw1 mx-auto bg-blueg-1000">
-  <p class="text-8xl text-center text-brown4g-300">center</p>
-  
-{#each Object.entries(stats) as [country, details]}
-  <p class="text-cent1 text-blueg-400">Country: {country}</p>
-  <ul>
-    {#each Object.entries(details) as [key, value]}
-    {#if key === "Location"}
-      <li><strong>{key}:</strong> {value}</li>
-      {:else}
-      <li>
-        <button on:click={() => toggleValue(country,key)}>
-          {key}
-        </button>
-        {#if openItems[country] && openItems[country].has(key)}
-          <p class="text-brown4g-300">{value}</p>
-        {/if}
-      </li>
-    {/if}
-    {/each}
-  </ul>
-{/each}
-
+<main class="container px-4 py-10 max-w-cw1 mx-auto text-center bg-AntiqueWhiteg-400">
+  <p class="text-4xl">center</p>
 </main>
+
+<div class="flex container mx-auto">
+  <Left classn="w-1/4" />
+  <Datadisp classn="w-3/4" stats={stats} />
+</div>
