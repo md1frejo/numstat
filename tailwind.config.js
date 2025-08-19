@@ -3,6 +3,14 @@ export default {
     content: ["./src/**/*.{html,js,svelte,ts}"],
     theme: {
 	extend: {
+	    divideStyle: {
+		double: 'double',   // now you can use divide-double
+		groove: 'groove',   // CSS border-style: groove
+	    },
+	    borderStyle: {
+		double: 'double',
+		groove: 'groove',
+	    },
 	    colors: {
 		limegrad: {
 		    100: "#00ff00",
@@ -86,6 +94,18 @@ export default {
 		    900: "#cce7cc",
 		    1000: "#e5f3e5",
 		},
+		purple4g: {
+		    100: "#551a8b",
+		    200: "#653096",
+		    300: "#7647a2",
+		    400: "#885ead",
+		    500: "#9975b9",
+		    600: "#aa8cc4",
+		    700: "#bba3d0",
+		    800: "#ccbadc",
+		    900: "#ddd1e7",
+		    1000: "#eee8f3",
+		},
 		brown4g: {
 		    100: "#8b2323",
 		    200: "#963838",
@@ -132,6 +152,10 @@ export default {
 		radley: ['radley', 'cursive'] // style: regular 400 italic,
 	    },
 	    fontSize: {
+		'da1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+
+		'da2': ['18pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+
 		'ma1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 		'cent1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 		'top1': ['50pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],

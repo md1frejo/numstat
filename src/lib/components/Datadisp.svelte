@@ -26,23 +26,18 @@
  }
 </script>
 
-<main class={`bg-AntiqueWhiteg-200 ${classn}`}>
+<main class={`bg-AntiqueWhiteg-800 ${classn}`}>
   <p class="text-4xl text-center text-brown4g-300">datadisp</p>
-
   {#each Object.entries(stats) as [country, details]}
-    <p class="font-bold text-blueg-400 mt-6">Country: {country}</p>
-
-    {#each chunk(Object.entries(details), 4) as group}
-      <div class="grid grid-cols-4 gap-4 my-2">
+      <p class="font-bold text-da1 text-browngrad-200 mt-6">Country: {country} <p class="text-purple4g-200 text-da2 font-crimson"> {Object.entries(details)[1]} </p>
+	{#each chunk(Object.entries(details), 5) as group}
+    <div class="grid grid-cols-5 gap-4 my-1">
         {#each group as [key, value]}
-          {#if key === "Location"}
-            <div><strong>{key}:</strong> {value}</div>
+          {#if key === "Location23432"}
+            <div><p class="text-da1 text-browngrad-200">{key}:</p><p class="text-grey6g-200" >{value}</p></div>
           {:else}
-            <div>
-              <button
-                class="underline text-blue-600"
-                on:click={() => toggleValue(country, key)}
-		>
+            <div class="border-b-2 border-dotted border-grey6g-800">
+              <button class="underline text-blue-600" on:click={() => toggleValue(country, key)}>
                 {key}
               </button>
               {#if openItems[country] && openItems[country].has(key)}
