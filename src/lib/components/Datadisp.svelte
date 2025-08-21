@@ -1,7 +1,8 @@
 <script>
  export let stats;
  export let classn = "";
-
+ export let bgdisp=""
+ 
  let openItems = {};
 
  function toggleValue(country, key) {
@@ -26,27 +27,31 @@
  }
 </script>
 
-<main class={`bg-AntiqueWhiteg-800 ${classn}`}>
+<main class={`${bgdisp} ${classn}`}>
   <p class="text-4xl text-center text-brown4g-300">datadisp</p>
   {#each Object.entries(stats) as [country, details]}
-      <p class="font-bold text-da1 text-browngrad-200 mt-6">Country: {country} <p class="text-purple4g-200 text-da2 font-crimson"> {Object.entries(details)[1]} </p>
-	{#each chunk(Object.entries(details), 5) as group}
-    <div class="grid grid-cols-5 gap-4 my-1">
-        {#each group as [key, value]}
-          {#if key === "Location23432"}
-            <div><p class="text-da1 text-browngrad-200">{key}:</p><p class="text-grey6g-200" >{value}</p></div>
-          {:else}
-            <div class="border-b-2 border-dotted border-grey6g-800">
-              <button class="underline text-blue-600" on:click={() => toggleValue(country, key)}>
-                {key}
-              </button>
-              {#if openItems[country] && openItems[country].has(key)}
-                <p class="text-brown4g-300">{value}</p>
+    <p class="font-bold text-da1 text-browngrad-200 mt-6">{country} <p class="text-purple4g-200 text-da2 font-crimson"> {Object.entries(details)[1]} </p>
+      {#if Object.keys(details).length === 0}
+	<p class="text-brown4g-300">missing</p>
+      {:else}
+	{#each chunk(Object.entries(details), 6) as group}
+	  <div class="grid grid-cols-6 gap-4 my-1">
+            {#each group as [key, value]}
+              {#if key === "Location23432"}
+		<div><p class="text-da1 text-browngrad-200">{key}:</p><p class="text-grey6g-200" >{value}</p></div>
+              {:else}
+		<div class="border-b-2 border-dotted border-grey6g-800">
+		  <button class="underline text-blue-600" on:click={() => toggleValue(country,key)}>
+                    {key}
+		  </button>
+		  {#if openItems[country] && openItems[country].has(key)}
+                    <p class="text-brown4g-300">{value}</p>
+		  {/if}
+		</div>
               {/if}
-            </div>
-          {/if}
-        {/each}
-      </div>
-    {/each}
+            {/each}
+	  </div>
+	{/each}
+      {/if}
   {/each}
 </main>

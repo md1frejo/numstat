@@ -118,6 +118,18 @@ export default {
 		    900: "#e7d3d3",
 		    1000: "#f3e9e9",
 		},
+		lightblueg: {
+		    100: "#add8e6",
+		    200: "#b5dbe8",
+		    300: "#bddfeb",
+		    400: "#c5e3ed",
+		    500: "#cde7f0",
+		    600: "#d6ebf2",
+		    700: "#deeff5",
+		    800: "#e6f3f7",
+		    900: "#eef7fa",
+		    1000: "#f6fbfc",
+		},
 		purple4g: {
 		    100: "#551a8b",
 		    200: "#653096",
@@ -152,13 +164,15 @@ export default {
 		radley: ['radley', 'cursive'] // style: regular 400 italic,
 	    },
 	    fontSize: {
+		'ca1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+
 		'da1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 
 		'da2': ['18pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 
 		'ma1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 		'cent1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
-		'top1': ['50pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+		'top1': ['70pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 		'top2': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 	      
 		'rdm1': ['12pt', { lineHeight: '1.0', fontWeight: '100', letterSpacing: '0.2em' }],
