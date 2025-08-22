@@ -164,6 +164,9 @@ export default {
 		radley: ['radley', 'cursive'] // style: regular 400 italic,
 	    },
 	    fontSize: {
+		'le1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+		'le2': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+
 		'ca1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 
 		'da1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],

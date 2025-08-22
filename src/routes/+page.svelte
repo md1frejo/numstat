@@ -8,7 +8,7 @@
 </script>
 
 <Main bgmain={data.bgmain} stats={stats} />
-<Center bgcenter={data.bgcenter} bgleft={data.bgleft} bgdisp={data.bgdisp} stats={stats}/>
+<Center bginnercenter={data.bginnercenter} bgcenter={data.bgcenter} bgleft={data.bgleft} bgdisp={data.bgdisp} stats={stats}/>
 
 <main class="container mx-auto px-4 flex gap-4">
 

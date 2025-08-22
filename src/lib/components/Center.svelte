@@ -6,11 +6,12 @@
  export let bgleft=""
  export let bgdisp=""
  export let bgcenter=""
+ export let bginnercenter=""
  
 </script>
 
 <main class={`container px-4 py-10 w-[1550px] mx-auto text-center ${bgcenter}`}>
-  <section class="border-4 border-dotted border-purple4g-800 rounded-xl p-4 bg-lightblueg-1000 mx-auto w-2/3 min-h-32">
+  <section class={`border-4 border-dotted border-purple4g-800 rounded-xl p-4 ${bginnercenter} mx-auto w-2/3 min-h-32`}>
     <p class="text-ca1">Below are different countries with all their stats available</p>
     <p class="text-ca1">Click on each to read more</p>
 

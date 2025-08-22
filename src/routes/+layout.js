@@ -4,8 +4,9 @@ export function load() {
 	bgtop: "bg-lightblueg-600",
 	bgmain: "bg-lightblueg-300",
 	bgcenter: "bg-lightblueg-700",
-	bgleft: "bg-lightblueg-200",
-	bgdisp: "bg-lightblueg-300",
+	bginnercenter: "bg-blueg-1000",
+	bgleft: "bg-lightblueg-600",
+	bgdisp: "bg-lightblueg-900",
 	bgbottom: "bg-brown4g-800"
     };
 }

@@ -7,6 +7,7 @@
  const st2=Object.entries(stats).flatMap(([outerKey, inner]) =>
    Object.entries(inner).map(([innerKey, value]) => [outerKey, innerKey, value])
  )
+ 
  const cts=Object.entries(stats).map(x => x[0])
  const deb=Object.entries(stats['Afghanistan']).map(x => x[0])
  

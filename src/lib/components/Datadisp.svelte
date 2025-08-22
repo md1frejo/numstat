@@ -28,7 +28,7 @@
 </script>
 
 <main class={`${bgdisp} ${classn}`}>
-  <p class="text-4xl text-center text-brown4g-300">datadisp</p>
+  <p class="text-4xl text-center text-brown4g-300">Countries</p>
   {#each Object.entries(stats) as [country, details]}
     <p class="font-bold text-da1 text-browngrad-200 mt-6">{country} <p class="text-purple4g-200 text-da2 font-crimson"> {Object.entries(details)[1]} </p>
       {#if Object.keys(details).length === 0}
