@@ -164,9 +164,10 @@ export default {
 		radley: ['radley', 'cursive'] // style: regular 400 italic,
 	    },
 	    fontSize: {
-		'le1': ['15pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+		'le1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 		'le2': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 		'le3': ['15pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
+		'le4': ['20pt', { lineHeight: '1.0', fontWeight: '200', letterSpacing: '0em' }],
 
 		'ca1': ['20pt', { lineHeight: '1.2', fontWeight: '200', letterSpacing: '0em' }],
 
