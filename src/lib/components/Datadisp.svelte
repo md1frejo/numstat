@@ -36,6 +36,8 @@
     <p class="text-4xl text-center text-brown4g-300">Countries</p>
     <ArrowDownAZ class="w-10 h-10 text-blueg-600"/>
   </div>
+  <br>
+  <br>
   {#each Object.entries(stats) as [country, details]}
     <div class="flex items-start justify-start space-x-4">
       <Flag class="w-10 h-10 text-browngrad-200"/>
