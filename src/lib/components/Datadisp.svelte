@@ -1,6 +1,9 @@
 <script>
+
+ import { Flag,ArrowDownAZ } from "lucide-svelte"
+ 
  export let stats;
- export let classn = "";
+ export let classn = ""
  export let bgdisp=""
  
  let openItems = {};
@@ -28,9 +31,16 @@
 </script>
 
 <main class={`${bgdisp} ${classn}`}>
-  <p class="text-4xl text-center text-brown4g-300">Countries</p>
+  <div class="flex items-center justify-center space-x-4">
+    <ArrowDownAZ class="w-10 h-10 text-blueg-600"/>
+    <p class="text-4xl text-center text-brown4g-300">Countries</p>
+    <ArrowDownAZ class="w-10 h-10 text-blueg-600"/>
+  </div>
   {#each Object.entries(stats) as [country, details]}
-    <p class="font-bold text-da1 text-browngrad-200 mt-6">{country} <p class="text-purple4g-200 text-da2 font-crimson"> {Object.entries(details)[1]} </p>
+    <div class="flex items-start justify-start space-x-4">
+      <Flag class="w-10 h-10 text-browngrad-200"/>
+      <p class="font-bold text-da1 text-browngrad-200 mt-6">{country} <p class="text-purple4g-200 text-da2 font-crimson"> {Object.entries(details)[1]} </p>
+      </div>
       {#if Object.keys(details).length === 0}
 	<p class="text-brown4g-300">missing</p>
       {:else}

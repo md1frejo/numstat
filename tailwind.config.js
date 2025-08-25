@@ -130,18 +130,6 @@ export default {
 		    900: "#eef7fa",
 		    1000: "#f6fbfc",
 		},
-		purple4g: {
-		    100: "#551a8b",
-		    200: "#653096",
-		    300: "#7647a2",
-		    400: "#885ead",
-		    500: "#9975b9",
-		    600: "#aa8cc4",
-		    700: "#bba3d0",
-		    800: "#ccbadc",
-		    900: "#ddd1e7",
-		    1000: "#eee8f3",
-		},
 	    },
 	    maxWidth: {
 		'cw1': '90rem', // 1408px — just an example

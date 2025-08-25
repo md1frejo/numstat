@@ -41,7 +41,7 @@
 </style>
 
 <main class={`container px-4 py-10 w-[1550px] mx-auto text-center ${bgmain}`}>
-  <p class="text-4xl text-center text-brown4g-300">random facts</p>
+  <p class="text-4xl text-center text-brown4g-300">random info</p>
     <p class="text-redrose text-ma1">
     {randFacts(cts,stats).country}  median age: {randFacts(cts, stats).stat}
   </p>
