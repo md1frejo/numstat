@@ -40,7 +40,7 @@
   <br>
   {#each Object.entries(stats) as [country, details]}
     <div class="flex items-start justify-start space-x-4">
-      <Flag class="w-10 h-10 text-browngrad-200"/>
+      <Flag class="w-7 h-7 text-browngrad-200"/>
       <p class="font-bold text-da1 text-browngrad-200 mt-6">{country} <p class="text-purple4g-200 text-da2 font-crimson"> {Object.entries(details)[1]} </p>
       </div>
       {#if Object.keys(details).length === 0}

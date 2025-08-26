@@ -12,3 +12,5 @@ export function load() {
 	bgbottom: "bg-brown4g-800",
     };
 }
+
+export const prerender = true;
