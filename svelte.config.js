@@ -8,10 +8,11 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: 'index.html' // good for SPA-style routing
+      fallback: '200.html' // good for SPA-style routing
     }),
-    paths: {
-      base: '' // empty for custom domain (numstats.com)
+      paths: {
+	  relative: true,   // ensure SvelteKit outputs relative paths
+	  base: ''
     }
   }
 };
