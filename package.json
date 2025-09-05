@@ -4,11 +4,11 @@
     "version": "0.0.1",
     "type": "module",
     "scripts": {
-	"dev": "vite dev",
-	"build": "vite build",
-	"preview": "vite preview",
-	"predeploy": "npm run build && cp CNAME build/CNAME",
-	"deploy": "gh-pages -d build"
+        "dev": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview",
+        "predeploy": "npm run build && cp CNAME build/CNAME",
+        "deploy": "gh-pages -d build"
     },
     "devDependencies": {
         "@sveltejs/adapter-auto": "^6.0.0",

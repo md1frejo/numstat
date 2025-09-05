@@ -3,8 +3,6 @@
  
  export let stats
  export let classn=""
- export let bglefta=""
- export let bgleftb=""
  export let bgleft=""
  
  let res1=null

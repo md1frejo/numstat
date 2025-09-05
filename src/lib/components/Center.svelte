@@ -3,8 +3,6 @@
  import Datadisp from "$lib/components/Datadisp.svelte"
 
  export let stats
- export let bglefta=""
- export let bgleftb=""
  export let bgleft=""
  export let bgdisp=""
  export let bgcenter=""
@@ -21,6 +19,6 @@
 </main>
 
 <div class="flex container mx-auto">
-  <Left bgleft={bgleft} bglefta={bglefta} bgleftb={bgleftb} bg3="bg-blue-500" classn="w-1/5" stats={stats} />
+  <Left bgleft={bgleft} bg3="bg-blue-500" classn="w-1/5" stats={stats} />
   <Datadisp bgdisp={bgdisp} classn="w-4/5" stats={stats} />
 </div>
